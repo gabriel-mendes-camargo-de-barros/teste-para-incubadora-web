@@ -1,0 +1,96 @@
+#page-login {
+  width: 65rem;
+  height: 55rem;
+
+  background: var(--background-color);
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-login .header {
+  width: 80%;
+  height: 7rem;
+
+  margin-top: 4rem;
+  padding-left: 9rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+}
+
+#page-login .header h1 {
+  font-size: 4rem
+}
+
+#page-login .header p {
+  font-size: 1.8rem;
+}
+
+#page-login .main {
+  width: 85%;
+  height: 25rem;
+
+  margin-top: 3rem;
+  padding-left: 7rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+#page-login .main .data {
+  height: 6rem;
+
+  margin-bottom: 2rem;
+
+  font-size: 1.8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#page-login .main .input {
+  width: 40rem;
+  height: 3rem;
+
+  font-size: 1.6rem;
+
+  border: 0;
+  border-radius: 0.8rem;
+}
+
+#page-login .main .input option {
+  font-size: 1.6rem;
+
+  border: 0;
+}
+
+#page-login .footer {
+  width: 40rem;
+  height: 7rem;
+
+  margin-bottom: 3rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#page-login .footer button {
+  padding: 0.6rem 2rem;
+  
+  border: 0;
+  border-radius: 0.8rem;
+
+  font-family: Nunito, sans-serif;
+
+  cursor: pointer;
+}

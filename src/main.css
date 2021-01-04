@@ -1,0 +1,65 @@
+:root{
+  --main-color: #000000;
+  --title-color: #5080e6;
+  --link-background: #00BFA6;
+  --link-background-featured: #6C63FF;
+  --background-color: #d0d0d5;
+  --link-hover: #D02D44;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, a, p, span, label, button {
+  font-family: Nunito, sans-serif;
+  color: var(--main-color); 
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background:#ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--main-color);
+  font-family: Ubuntu, sans-serif;
+  margin: 0;
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Poppins;
+  color: var(--color-text-base);
+}
+
+.container {
+  width: 90vw;
+  max-width: 1200px;
+}
+
+@media (min-width: 1200px) {
+  :root {
+      font-size: 62.5%;
+  }
+}
