@@ -1,15 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Dashboard from '../pages/Dashboard';
 
-const appRoutes = () => {
+const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Switch>
+        <Route path="/auth" >
+          <Redirect to="/dashboard" />
+        </Route>
         <Route path="/dashboard" component={Dashboard} />
       </Switch>
     </BrowserRouter>
   );
 };
 
-export default appRoutes;
+export default AppRoutes;

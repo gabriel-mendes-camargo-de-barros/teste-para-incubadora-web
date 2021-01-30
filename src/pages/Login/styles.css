@@ -1,43 +1,30 @@
 #page-login {
-  width: 65rem;
-  height: 55rem;
-
+  width: 100%;
+  height: 100%;
+  
   background: var(--background-color);
-  border-radius: 2rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 #page-login .header {
   width: 80%;
-  height: 7rem;
+  height: 5rem;
 
-  margin-top: 4rem;
-  padding-left: 9rem;
+  margin-top: 1rem;
 
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: space-between;
 }
 
-#page-login .header h1 {
-  font-size: 4rem
-}
-
-#page-login .header p {
-  font-size: 1.8rem;
-}
-
 #page-login .main {
-  width: 85%;
-  height: 25rem;
-
-  margin-top: 3rem;
-  padding-left: 7rem;
+  width: 80%;
+  height: 22rem;
 
   display: flex;
   flex-direction: column;
@@ -46,11 +33,9 @@
 }
 
 #page-login .main .data {
-  height: 6rem;
+  height: 2.8rem;
 
   margin-bottom: 2rem;
-
-  font-size: 1.8rem;
 
   display: flex;
   flex-direction: column;
@@ -58,10 +43,12 @@
 }
 
 #page-login .main .input {
-  width: 40rem;
-  height: 3rem;
+  height: 106px;
 
-  font-size: 1.6rem;
+  font-size: 1rem;
+
+  padding: 0.4rem 1.5rem;
+  margin-top: 0.5rem;
 
   border: 0;
   border-radius: 0.8rem;
@@ -74,10 +61,8 @@
 }
 
 #page-login .footer {
-  width: 40rem;
-  height: 7rem;
-
-  margin-bottom: 3rem;
+  width: 80%;
+  height: 4rem;
 
   display: flex;
   justify-content: space-between;
@@ -91,6 +76,66 @@
   border-radius: 0.8rem;
 
   font-family: Nunito, sans-serif;
+  font-size: 0.8rem;
 
   cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  #page-login {
+    width: 65rem;
+    height: 55rem;
+
+    border-radius: 2rem;
+  }
+  
+  #page-login .header {
+    margin-top: 4rem;
+    height: 7rem;
+  }
+  
+  #page-login .header h1 {
+    font-size: 4rem
+  }
+  
+  #page-login .header p {
+    font-size: 1.8rem;
+  }
+  
+  #page-login .main {  
+    height: 34rem;
+    padding-left: 7rem;
+  }
+  
+  #page-login .main .data {
+    height: 6rem;
+  
+    margin-bottom: 2rem;
+  
+    font-size: 1.8rem;
+  }
+  
+  #page-login .main .input {
+    width: 40rem;
+    height: 3rem;
+  
+    font-size: 1.6rem;
+  }
+  
+  #page-login .main .input option {
+    font-size: 1.6rem;
+  
+    border: 0;
+  }
+  
+  #page-login .footer {
+    height: 7rem;
+
+    padding: 0 5rem 0 7rem;
+    margin-bottom: 3rem;
+  }
+
+  #page-login .footer button {
+    font-size: 1.2rem;
+  }
 }

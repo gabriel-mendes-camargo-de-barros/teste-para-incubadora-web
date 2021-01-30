@@ -33,22 +33,22 @@ function Login() {
         <form title="form-login" onSubmit={handleSubmit}>
           <div className="data">
             <label htmlFor="login">Login:</label>
-            <input 
-              name="login" 
-              type="text" 
-              className="input" 
-              value={user} 
+            <input
+              name="login"
+              type="text"
+              className="input"
+              value={user}
               onChange={event => setUser(event.target.value)}
             />
           </div>
           <div className="data">
             <label htmlFor="senha">Senha:</label>
-            <input 
-              name="senha" 
-              type="password" 
+            <input
+              name="senha"
+              type="password"
               className="input"
-              value={pass} 
-              onChange={event => setPass(event.target.value)} 
+              value={pass}
+              onChange={event => setPass(event.target.value)}
             />
           </div>
           <div className="data">
