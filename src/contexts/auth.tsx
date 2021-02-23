@@ -1,7 +1,6 @@
 import React, { createContext, useState } from 'react';
 import * as auth from '../services/auth';
 import api from '../services/api';
-import Routes from '../routes/index.routes';
 
 interface Credentials {
   user: string;
@@ -38,7 +37,7 @@ export const AuthProvider = (props: { children: JSX.Element }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ signed: !!userData, userData, login }}>
+    <AuthContext.Provider value={{ signed: !!auth.getToken, userData, login }}>
       {props.children}
     </AuthContext.Provider>
   );

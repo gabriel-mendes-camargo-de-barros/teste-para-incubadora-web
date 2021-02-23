@@ -33,3 +33,11 @@ export const storeToken = (token: Token) => {
 export const getToken = () => {
   return window.localStorage.getItem('token');
 };
+
+// export const storeUser = (user: UserData) => {
+//   window.localStorage.setItem('user', user);
+// };
+
+// export const getUser = () => {
+//   return window.localStorage.getItem('token');
+// };
